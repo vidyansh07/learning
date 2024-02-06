@@ -864,3 +864,63 @@ step 7 : exit from evenodd function
 step 8 : call the evenOdd function 
 step 9 : end 
 """
+
+
+# conditions in python 
+
+# def case():
+#     string = input("Enter your string :")
+#     for i in string:
+#             if i.isupper():
+#                 print (i +" is uppercase")
+#             else: 
+#                 print(i + " is lowercase")
+# case()
+
+"""Write a python  programm that asks the user for their age and gender and prints a massage indiavting whether they
+eligible for a discount . Females under the age of 25 and males under the age of 22  are eligible for a discount."""
+
+# def discount(): 
+
+
+#     try:
+#         gender = input("Enter your gender : ")
+#         age = int(input("Enter the numeber : "))
+#         if gender.lower() != 'male'or gender.lower()!= 'female':
+#             print("Plese select write type of gender")
+#     except: 
+#         print ("Please Enter right answers")
+    
+#     else:   
+#         if gender.lower()  == 'male' and age <22:
+#                 print("you're eligible for this Discounts. ")
+#         elif  gender.lower == 'female'and age <25:
+#             print("You're eligible")
+#         else: 
+#             print("You are not eligible for the discount")
+            
+# discount()
+
+
+"""Write a program that takes a number from the user and checks if it's a prime numbe grater than 1 and divisible 
+by 1 and itself and not divisible by other numbers."""
+
+# def primeNumber():
+#     try: 
+#         num = int(input("Enter the number: "))
+#     except:
+#         print("Invalid number")
+#     else:
+#         if  num > 1:
+#             for i in range(2,num):
+#                 if  num % i ==0:
+#                     print(num , "is not a prime number")
+#                     break
+#                 else:
+#                     print(num, "is a prime number")
+#                     break
+#             else:
+#                 print('not a prime number')
+
+# primeNumber()
+
