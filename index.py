@@ -924,3 +924,102 @@ by 1 and itself and not divisible by other numbers."""
 
 # primeNumber()
 
+# """
+#         Write a program that takes a list of numbers and return the sum of all the even numbers in the list.
+#     """
+
+# def addEven():
+#     a = [23,234,234,234,32,3245]
+#     n=0
+#     for i in a :
+#         if i %2 ==0:
+            
+#             n= n+i
+#     print(n)
+# addEven()
+
+
+"""Write  a program that takes a list of strings and reaturns the longest string in the list.
+    """
+
+# def stringLengthCounter():
+#     strings = ["Hello","Vidyansh","You","are","Learning python"]
+    
+#     i =1
+#     for (j =0, j>len(strings), j++):
+#     for string in strings:
+        
+#         if len(string[i])> len(string):
+#                 print(string)
+
+# stringLengthCounter()
+
+# def longString():
+#     long = ''
+#     strings = ["Hello","Vidyansh","You","Learning python","are","Hello i am vidyansh tripathi"]
+#     for string in strings:
+#         longLength = len(long)
+#         if  len(string) >longLength:
+#             long= string
+            
+#     print(long)
+# longString()
+
+
+# """Write a programm to print reverse string :
+#     """
+    
+# def reverseString():
+#     a = input("Enter a string: ")
+#     for i in range(len(a)-1,-1,-1):
+#         print(a[i]  ,end = "")
+# reverseString()
+
+"""
+    Write a program that takes a list of numbers and returns a new list with all the numbers squared.
+"""
+# def squareValue():
+#     square_list = []
+#     num_list = [23,23,5,2,3]
+#     for num in num_list:
+#         square_list.append((num**2))
+#     print(square_list)
+# squareValue()
+
+"""
+Write a program that takes a list of numbers and returns the average of all the numbers in the list.
+"""
+
+# def average():
+#     num_list = []
+#     list_limit = int(input("Enter the legth of string: "))
+#     for i in range(list_limit):
+#         num= int(input(f"Enter the numbers {i+1} :"))
+#         num_list.append(num)
+#     num = 0
+#     for j in num_list:
+#         num = num+j
+#     print(num/len(num_list))
+        
+    
+    
+# average()
+    
+    
+"""Write a program that takes two lists and return a new list with only the elements that are common to bot lists.
+    """
+
+# def commonElement():
+#     list1 = ["vidyansh","Deevyansh", "Devansh"]
+#     list2 = ["rohan", "vidyansh"]
+    
+    
+#     for i in list1:
+#         for j in list2:
+#             if i == j:
+#                 print(i)
+# commonElement()
+
+"""Write a program that takes a list of strings and returns a new list with only the strings that contain the
+    letter input by user.
+    """
