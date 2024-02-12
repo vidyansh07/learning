@@ -1020,6 +1020,27 @@ Write a program that takes a list of numbers and returns the average of all the 
 #                 print(i)
 # commonElement()
 
-"""Write a program that takes a list of strings and returns a new list with only the strings that contain the
-    letter input by user.
-    """
+# """Write a program that takes a list of strings and returns a new
+#     list with only the strings that contain the
+#     letter input by user.
+# """
+# def charInString():
+#     a = ["Hello", "Vidyansh", "Vaibhav"]
+#     char = input("Enter the char : ").lower()
+#     for i in a:
+#         if char in i:
+#             print(i)
+# charInString()
+
+"""Their is a array i have to find the fourth smallest element of array"""
+# def reverse():
+#     a = [12,23,54,3,53,32]
+#     count = []
+#     i = 1
+#     for i in range(len(a)-1):
+#         i = i+1
+#     for j in a:
+#         if j<a[i]:
+#             count.append(a[i-1])
+#     print(count)
+# reverse()
