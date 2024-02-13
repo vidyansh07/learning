@@ -939,8 +939,9 @@ by 1 and itself and not divisible by other numbers."""
 # addEven()
 
 
-"""Write  a program that takes a list of strings and reaturns the longest string in the list.
-    """
+"""
+    Write  a program that takes a list of strings and reaturns the longest string in the list.
+"""
 
 # def stringLengthCounter():
 #     strings = ["Hello","Vidyansh","You","are","Learning python"]
@@ -1044,3 +1045,6 @@ Write a program that takes a list of numbers and returns the average of all the 
 #             count.append(a[i-1])
 #     print(count)
 # reverse()
+
+
+from machine import Pin, Timer

@@ -205,3 +205,20 @@
 
 # letterString()
 
+
+
+# 52. Write a program that takes a list of numbers and returns a new list with only the 
+# numbers that are perfect squares.
+
+
+# def perfectSquare():
+#     p_squre = []
+#     array = [32,234,234,24,36,16]
+    
+#     for i in array:
+#         value =i ** 0.5
+#         if value**2 ==i:
+#             print(i)
+# perfectSquare()
+                
+    
