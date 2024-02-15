@@ -1047,4 +1047,107 @@ Write a program that takes a list of numbers and returns the average of all the 
 # reverse()
 
 
-from machine import Pin, Timer
+# """
+# Restart app
+# """  
+# def restart():
+#     value = input("Enter the value : ")
+#     if value.lower() == "exit" :exit()
+    
+# while True: 
+#     restart()
+
+"""
+    Write a python program for factorials
+"""
+# def factorials():
+    
+#     try :
+#         value = int(input("Enter the number : "))
+#     except:
+#         print("Please Enter the write values")
+#     else:
+#         i = 1
+        
+#         while value >= 1:
+#             i = i * value
+#             value= value-1
+#         print(i)
+# factorials()
+    
+    
+"""
+    Write a program to reverse a array
+"""
+# def reverse():
+#     b = []
+#     a = [2,43,54,586,45,765,867]
+#     for i in range(len(a)-1,-1,-1):
+#         print(a[i])
+# reverse()
+
+"""
+    Write a python program to count the number of digits in a given integers
+"""
+# def count():
+#     try:
+#         a = int(input("Enter the number : "))
+#     except:
+#         print("Please input the Integer Value")
+#     else:
+#         b = str(a)
+#         print(len(b))
+# count()
+
+
+# def count():
+#     i=0
+#     a = int(input("Enter the Number : "))
+#     while a>0:
+#         a= a//10
+#         i = i+1
+        
+#     print(i)
+# count()
+
+"""Write a Python program to print the Fibonacci sequence up to a given number using Fabonaci serise"""
+
+# def fabonacci():
+#     try: value = int(input("Enter the number : "))
+#     except: print("Invalid Number")
+#     else:
+#         start_0 =0
+#         start_1 =1
+#         result =0
+#         while start_1<value:
+#             result = start_0 + start_1
+#             print(result)
+#             start_0 =start_1
+#             start_1 = result
+        
+# fabonacci()
+
+"""
+    Write a program to guess the number :
+"""
+import random
+
+def guess():
+    
+        num = random.randint(0,100)
+        i =1
+        while  i:
+            try:
+                choice = int(input("Enter the number : "))
+            except:
+                print("Please Enter the write choice : ")
+            else:
+                
+                if num > choice:
+                    print("Your number is small.")
+                elif num <choice:
+                    print("Your number is greater.")
+                else:
+                    print("Congratulations ! You got the number.")
+                    i = 0
+guess()
