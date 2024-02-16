@@ -1130,24 +1130,94 @@ Write a program that takes a list of numbers and returns the average of all the 
 """
     Write a program to guess the number :
 """
-import random
+# import random
 
-def guess():
+# def guess():
     
-        num = random.randint(0,100)
-        i =1
-        while  i:
-            try:
-                choice = int(input("Enter the number : "))
-            except:
-                print("Please Enter the write choice : ")
-            else:
+#         num = random.randint(0,100)
+#         i =1
+#         while  i:
+#             try:
+#                 choice = int(input("Enter the number : "))
+#             except:
+#                 print("Please Enter the write choice : ")
+#             else:
                 
-                if num > choice:
-                    print("Your number is small.")
-                elif num <choice:
-                    print("Your number is greater.")
-                else:
-                    print("Congratulations ! You got the number.")
-                    i = 0
-guess()
+#                 if num > choice:
+#                     print("Your number is small.")
+#                 elif num <choice:
+#                     print("Your number is greater.")
+#                 else:
+#                     print("Congratulations ! You got the number.")
+#                     i = 0
+# guess()
+
+"""Write a program to find the root of quadratic equation"""
+
+
+# import math
+# def equation():
+#     print("This the solution of quadratic equations \n please Enter the values is form of ax^2 +bx + c. \n \n Thank You")
+    
+#     try :
+#         a = float(input("Enter the value of a :"))
+#         b = float(input("Enter the value of b :"))
+#         c = float(input("Enter the value of c :"))
+#     except:
+#         print("Please Enter the write Values of a, b, c ")
+#     else:
+#         discriminent = b**2 -4*a*c
+#         if discriminent > 0:
+#             x1 =(-b+math.sqrt(b*b -4*a*c))/2*a
+#             x2 =(-b-math.sqrt(b*b -4*a*c))/2*a
+#             print("First Value of x is ",x1)
+#             print("Second Value of x is ",x2)
+#         else:
+#             print("We can not find the value of this equations.")
+
+# equation()       
+
+
+"""Write a python program that uses a while loop to remove all occurrence of a give element from a list"""
+
+# def removeFromList():
+#     a = [43,324,13,12,43]
+#     value = int(input("Enter the Number :"))
+#     # for i in a:
+#     #     if i == value:
+#     #         a.remove(i)
+#     # print(a)
+    
+# removeFromList()  
+
+
+"""Write a python program that uses a while loop to convert a decimal number to its binary equivalent"""
+# def binary():
+#     try : 
+#         num = int(input("Enter the number : "))
+#     except:
+#         print("Please Enter the write value")
+#     else:
+#         b = ""
+#         d = num
+#         while d>0:
+#             b =b+ str(d % 2)
+#             d = d //2 
+#         print(f" {b} is binary of {num}")
+# binary()
+
+"""Write a python program tha t uses a while loop to find the frequency of each element in a given list"""
+# def frequency():
+#     nums = [9,0,3,2,4,2,3,6,7,7,3]
+#     i = 0 
+#     counter = {}
+#     while i<len(nums):
+#         a = nums[i]
+#         if a in counter:
+#             counter[a]=counter[a]+1
+#         else:
+#             counter[a]=1
+#         i = i+1
+#     print(counter)
+# frequency()
+        
