@@ -221,4 +221,16 @@
 #             print(i)
 # perfectSquare()
                 
-    
+                
+"""Convert a string in to non vowel string"""
+
+# def disemvowel(string_):
+#     vowel= "aeiou"
+#     a= ""
+#     for i in string_:
+#         if i not in vowel:
+#             a +=i
+#     return a
+
+# disemvowel("Hello")
+

@@ -1219,5 +1219,35 @@ Write a program that takes a list of numbers and returns the average of all the 
 #             counter[a]=1
 #         i = i+1
 #     print(counter)
+#     for i in counter:
+#         if counter[i] == 1:
+#             print(i, "is 1 time in the list")
 # frequency()
-        
+
+
+# def pattern():
+#     a = "*"
+#     x =6
+#     y =2
+#     for i in range(x):
+#         for j in range(2):
+#             if i 
+# pattern()
+
+
+# """Bit manupilations"""
+
+# def singleElement():
+#     a = []
+#     length = int(input("Enter the length of arrey : "))
+    
+#     for i in range(length):
+#         elements = int(input("Enter the elements : "))
+#         a.append(elements)
+#     i = 0
+#     while i <=len(a): 
+#         a= a^a[i]  
+#         i +=i
+# singleElement()
+    
+
