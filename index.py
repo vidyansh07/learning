@@ -1251,3 +1251,18 @@ Write a program that takes a list of numbers and returns the average of all the 
 # singleElement()
     
 
+"""Lets make a  char find in a string"""
+
+# class CharFinder():
+#     def __init__(self, string,input):
+#         self.string = string
+#         for i in self.string:
+#             if i.lower() == input:
+#                 name = "char found"
+#                 print(name)
+        
+# char = CharFinder("Hello","e")
+# char
+
+
+"""Find the simulation of the number :"""
