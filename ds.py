@@ -134,24 +134,93 @@ Write a python program to implement stack in data structure
 
 """Write a python program to check for stack overflow"""
 
-class StackOverflow:
-    def __init__(self):
-        self.stack = []
-        self.limit = 5
-    def push (self,data):
+# class StackOverflow:
+#     def __init__(self):
+#         self.stack = []
+#         self.limit = 5
+#     def push (self,data):
             
-            if len(self.stack)<self.limit:
-                self.stack.append(data)
-            else:
-                print("Your stack is overflow it can't handle more data")
-            print(self.stack)
-stackoverflow = StackOverflow()
+#             if len(self.stack)<self.limit:
+#                 self.stack.append(data)
+#             else:
+#                 print("Your stack is overflow it can't handle more data")
+#             print(self.stack)
+# stackoverflow = StackOverflow()
 
-stackoverflow.push(5)
-stackoverflow.push(5)
-stackoverflow.push(5)
-stackoverflow.push(5)
-stackoverflow.push(5)
-stackoverflow.push(5)
+# stackoverflow.push(5)
+# stackoverflow.push(5)
+# stackoverflow.push(5)
+# stackoverflow.push(5)
+# stackoverflow.push(5)
+# stackoverflow.push(5)
 
+"""Write a program to check the underflow condition in array using stack"""
+# class UnderFlow:
+#     def __init__(self):
+#         self.stack = []
+#         self.limit = 0
+#     def perform(self):
+#             if len(self.stack)>0:
+#                 self.stack.pop()
+#             else:
+#                 print("This is the underflow condition for this array")
+# underflow = UnderFlow()
+# underflow.perform()
+
+"""find the pelindrom string using stack"""
+
+# class Pelindrom:
+#     def __init__(self) :
+#         self.stack = []
+#         self.reverse = []
+        
+#     def perform(self,data):
+#         for i in data:
+#             self.stack.append(i)
+#         i =0
+#         while i <len(self.stack)+4:
+#             self.reverse.append(self.stack.pop())
+#             i = i +1
+#         if self.stack == self.reverse:
+#             print("This is a pelindrom string")
+#         else:
+#             print("This is not a pelindrom string")
+# string = input("Enter the string : ")
+# Pelindrom().perform(string)
+
+"""Write a python code for arrage a array in asending order using stack"""
+
+# class Asc():
+#     def __init__(self,stack):
+#         self.stack = stack
+#     def sort (self):
+#         temp = []
+#         while len(self.stack)!= 0:
+#             top = self.stack.pop()
+#             while len(temp) !=0 and temp[-1]> top:
+#                 self.stack.append(temp.pop())
+#             temp.append(top)
+#         return temp
+
+
+# asc= Asc([34,24,63,74])
+# print(asc.sort())      
+
+
+"""Write a program to convert a decimal number to its binary representation using a Stack"""
+
+# class Binary:
+#     def __init__(self):
+#         self.stack = []
+#     def convert(self, num):
+#         while num >0:
+#             i = num%2
+#             self.stack.append(i)
+#             num = num //2
+#         return self.stack
     
+# binary = Binary()
+# print(binary.convert(4))
+
+
+""""""
