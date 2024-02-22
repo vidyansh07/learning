@@ -1265,4 +1265,65 @@ Write a program that takes a list of numbers and returns the average of all the 
 # char
 
 
-"""Find the simulation of the number :"""
+"""Write a python program to count the number of upper and lower cases in a string"""
+
+# def counter():
+#     upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+#     lower = upper.lower()
+#     num_u = 0
+#     num_l = 0
+#     a = input("Enter the string : ")
+#     for i in range(len(a)):
+#         if a[i] in upper:
+#             print(f"{a[i]} is a upper case")
+#             num_u = num_u+1
+#         elif a[i] in lower:
+#             print(f"{a[i]} is in lower case")
+#             num_l += 1
+#     print(f"In this string {num_u} upper case letters and {num_l} lower case letters")
+# counter()
+
+"""Write a python program to accept a string a display it back after 
+removing alternate charecters from it
+"""
+
+def alternate():
+    a = input("Enter the string :")
+    pass
+    
+alternate()
+
+"""Write a python to pelindrom """
+# def pelindrom():
+#     a = input("Enter a String : ")
+#     reverse = a[::-1]
+#     if a == reverse: print("this is pelindrom")
+#     else: print("This is not a pelindrom")
+# pelindrom()
+
+"""Write a python code for count the number of word in a string """
+# def count():
+#     a = input("Enter the string : ")
+#     print(len(a))
+# count()
+
+"""Write a program to print the reverse of the string : """
+
+# def reverse():
+#     a = input("Enter the string")
+#     b= ""
+#     for i in range(len(a)):
+#         b= b +a[-i-1]
+#     print(b)
+# reverse()
+
+"""Write a program to check if string contains all letters of alphabet"""
+
+# def alphabet():
+#     a = input("Enter the string : ")
+#     b = "abcdefghijklmnopqrstuvwxyz"
+#     for i in b :
+#         if i not in a:
+#             print("This string contains not all charecters of english alphabet")
+#             break
+# alphabet()

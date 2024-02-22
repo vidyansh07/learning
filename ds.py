@@ -223,4 +223,16 @@ Write a python program to implement stack in data structure
 # print(binary.convert(4))
 
 
-""""""
+"""Print a design using loops and condition"""
+
+"""
+    ABCDEFGFEDCBA
+    ABCDEF FEDCBA
+    ABCDE   EDCBA
+    ABCD     DCBA
+    ABC       CBA
+    AB         BA
+    A           A
+"""
+def design():
+    
