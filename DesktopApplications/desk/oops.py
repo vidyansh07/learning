@@ -1,46 +1,25 @@
-import sys
-from PyQt5.QtWidgets import QWidget, QApplication,QMessageBox,QPushButton
+import sys 
+from PyQt5.QtWidgets import  QApplication, QMainWindow, QPushButton
+from util.widget import Button, Text
 
-class App:
+class Window(QMainWindow):
     def __init__(self):
-        self.app = QApplication(sys.argv) # Ignore
-        self.windows = QWidget()
-        self.massage = QMessageBox()
-        self.button = QPushButton()
-
-    def screen(self):
-        self.windows.setGeometry(0,0,800,500)
-        self.windows.setWindowTitle("Name") 
-        self.windows.setStyleSheet("background-color : orange")
-        self.windows.show()
+        super().__init__()
+        self.setFixedSize(800,600)
+        button = Button("Click me to test", self)        
+        button.setStyleSheet("background-color :red")
+        button.clicked.connect(self.testing)
+        button.move(499,40)
         
-    def handleMinimize(self):
-        self.windows.showMinimized()
-
-    def handleMaximize(self):
-        self.windows.showMaximized()
-
-    def handleClose(self):
-        self.windows.close()
-
-        self.minButton =QPushButton("Minimize",self.windows)
-        self.minButton.setStyleSheet("background-color : white")
-        self.minButton.move(40, 60)
-        self.minButton.clicked.connect(self.handleMinimize)
-
-        self.maxButton= QPushButton("Maximize",self.windows)
-        self.maxButton.setStyleSheet("background-color : white")
-        self.maxButton.move(150, 60)
-        self.maxButton.clicked.connect(self.handleMaximize)
-
-        self.clButton= QPushButton("Close",self.windows)
-        self.clButton.setStyleSheet("background-color : white")
-        self.clButton.move(260, 60)
-        self.clButton.clicked.connect(self.handleClose)
-
-
-    
+        text = Text("Hello", self, 24, "Gill Sans")
+        text.move(100,40)
         
-app = App()
-app.screen()
-sys.exit(app.exec_())
+    def testing(self):
+        print("Success")
+        
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    window = Window()
+    window.show()
+    sys.exit(app.exec_())

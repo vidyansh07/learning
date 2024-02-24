@@ -234,3 +234,14 @@
 
 # disemvowel("Hello")
 
+
+def are_you_playing_banjo(name):
+    char = "R"
+    if char in name[0]:
+            print(f"{name} play banjo")
+    else:
+        print(f"{name}")
+    
+        
+    
+are_you_playing_banjo("martin")
