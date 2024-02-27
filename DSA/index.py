@@ -1287,11 +1287,11 @@ Write a program that takes a list of numbers and returns the average of all the 
 removing alternate charecters from it
 """
 
-def alternate():
-    a = input("Enter the string :")
-    pass
+# def alternate():
+#     a = input("Enter the string :")
+#     pass
     
-alternate()
+# alternate()
 
 """Write a python to pelindrom """
 # def pelindrom():
@@ -1327,3 +1327,74 @@ alternate()
 #             print("This string contains not all charecters of english alphabet")
 #             break
 # alphabet()
+
+"""Write a code for armstrong number."""
+
+# def armstrongNum(num):
+#     x = []
+#     z = str(num)
+#     y= 0
+#     for i in range(len(z)):
+#         x.append(z[i])
+#     print(x)
+#     for j in range(len(x)) :
+#         y = y +int(x[j])**3
+#     print(y)
+#     if y == num:
+#         print(f"{num} is a armstrong number.")
+#     else:
+#         print(f"{num } is not a armstrong number.")
+# armstrongNum(153)
+
+"""second method"""
+
+# def is_armstrong_number(number):
+#     num_str = str(number)
+#     num_digits = len(num_str)
+#     sum_of_digits = sum(int(digit) ** num_digits for digit in num_str)
+#     return sum_of_digits == number
+
+# # User input
+# num = int(input("Enter a number: "))
+
+# # Check and display the result
+# if is_armstrong_number(num):
+#     print(f"{num} is an Armstrong number.")
+# else:
+#     print(f"{num} is not an Armstrong number.")
+
+"""Problem Statement - Create a Python program that prompts the user to enter positive numbers continuously. The program should use a while loop to collect input data until the user enters a non-positive number. Implement simple data validation to ensure entered values are valid positive numbers. Finally, output the list of positive numbers entered by the user. The objective is to create an interactive and error-tolerant program for collecting and handling user input."""
+
+# def positiveNumber():
+#     x = []
+#     i=1
+#     while i:
+#         num = int(input("Enter the Positive number to continue the game : "))
+        
+#         if num >0:
+#             x.append(num)
+#         else:
+#             print(x)
+#             i =0
+        
+# positiveNumber()
+        
+"""Second approch"""
+# numbers = []
+
+# while True:
+#     user_input = input("Enter a positive number (enter a non-positive number to stop): ")
+
+#     # Check if the input can be converted to a float and is non-negative
+#     if user_input.replace('.', '', 1).isdigit() and float(user_input) > 0:
+#         numbers.append(float(user_input))
+#     elif user_input.replace('-', '', 1).isdigit() and float(user_input) <= 0:
+#         break  # Exit the loop if a non-positive number is entered
+#     else:
+#         print("Invalid input. Please enter a valid positive number.")
+
+# # Data handling after the loop
+# if numbers:
+#     print(f"You entered the following positive numbers: {numbers}")
+# else:
+#     print("No positive numbers were entered.")
