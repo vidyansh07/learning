@@ -1398,3 +1398,18 @@ removing alternate charecters from it
 #     print(f"You entered the following positive numbers: {numbers}")
 # else:
 #     print("No positive numbers were entered.")
+
+"""Write a code for adding two small numbers from a list of numbers"""
+# def sum_two_smallest_numbers():
+#     numbers= [3,24,53,2,424,643]
+#     x = numbers
+#     y = []
+#     for i in range(len(numbers)):
+#     # write a code for sort the array in minimum to highest
+#         for j in range(len(numbers)):
+#             if numbers[i]>= numbers[j]:
+#                 y.append(numbers[i])
+#     z = y[0]+y[1]
+#     print(z)
+#     print(y)
+# sum_two_smallest_numbers()

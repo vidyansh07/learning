@@ -7,9 +7,9 @@ def Home(request):
 def About(request):
     return HttpResponse("Welcome to about section")
 def Contact(request):
-    return render(request,'contact.html')
+    return render(request,'template/contact.html')
 urlpatterns = [
     path('', Home),
     path('about', About),
-    path('contact', Contact),
+    path('contact/', Contact),
 ]
