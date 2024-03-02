@@ -1413,3 +1413,29 @@ removing alternate charecters from it
 #     print(z)
 #     print(y)
 # sum_two_smallest_numbers()
+
+"""Make the pascal trangle"""
+
+# def pascal_trangle():
+#     print(1)
+#     k=1
+#     for i in range(1,6):
+#         for j in range(3):
+#             print(" ")
+#         for j in range(1,i+1):
+#             print(j,end="  ")
+#         print(k)
+
+# pascal_trangle()
+
+"""print the 1 to 9 for infinity"""
+
+def oneToNine():
+    i=0
+    while i<9:
+        for i in range(9):
+            i = i+1
+            print(i)
+            if i ==9:
+                i=0
+oneToNine()
