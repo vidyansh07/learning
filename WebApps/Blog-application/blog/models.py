@@ -5,7 +5,8 @@ from django.contrib.auth.models import User
 
 class PublishManager(models.Manager):
     def get_queryset(self):
-        return super().get_queryset().filter(status=Post.Status.PUBISHED)
+        return super().get_queryset()\
+            .filter(status=Post.Status.PUBLISHED)
     
     
 class Post(models.Model):
@@ -27,7 +28,8 @@ class Post(models.Model):
     update = models.DateTimeField(auto_now=True)
     status = models.CharField(max_length=2,choices = Status.choices, default = Status.DRAFT)
 
-    
+    objects = models.Manager() # The default manager
+    published = PublishManager() # The costom manager
     class Meta:
         ordering = ['-publish']
         indexes = [
@@ -36,5 +38,3 @@ class Post(models.Model):
     
     def __str__(self):
         return self.title
-
-    

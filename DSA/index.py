@@ -1430,12 +1430,95 @@ removing alternate charecters from it
 
 """print the 1 to 9 for infinity"""
 
-def oneToNine():
-    i=0
-    while i<9:
-        for i in range(9):
-            i = i+1
-            print(i)
-            if i ==9:
-                i=0
-oneToNine()
+# def oneToNine():
+#     i=0
+#     while i<9:
+#         name = input()
+#         i = i+1
+#         print(i)
+#         if i ==9:
+#             i=0
+# oneToNine()
+
+"""write a program to find the perfect square"""
+# def find_next_square(sq):
+#     # Return the next square if sq is a square, -1 otherwise
+#     x=sq**0.5
+    
+#     if int(x)==float(x):
+#         S = (x+1)**2
+#         S = int(S)
+#         return S
+#     else:
+#         return -1
+    
+# print(find_next_square(121))
+# print(23==23.00)
+
+"""Rock Paper scissors"""
+"""Their is a mistake"""
+# class Game:
+#     def __init__(self, p1,p2):
+#         if p1==p2:
+#             print("Game drawing")
+#         elif p1=="rock" and p2=="paper" or p1=='paper' and p2=='rock':
+#             print("p1 wins")
+#         elif p1=="paper" and p2=="scissors" or p1=='paper' and p2=='scissors':
+#             print("p2 wins")
+#         elif p1=="scissors" and p2=="rock" or p1=='rock' and p2 == 'scissors':
+#             print("p2 wins")
+
+# game = Game('paper', 'rock')
+# game
+
+# coding ='coding'
+# love =coding
+# love
+# print(love)
+
+"""Count and speak problems"""
+# def count(n, string):
+#     count = 0
+#     for i in range(len(string)):
+#             count += 1
+#             if string[i]!= string[i-1]:
+#                 count=1
+#             if string[i]>=string[i-1]:
+#                 x =str(count)+str(string[i])
+#                 print(x ,end = '')
+
+# count(4,"2112")
+
+"""solveing linear equations"""
+# def solve():
+#     print('The formate of equations should be look like this: \n ax + by = c\n where a, b and c are constents.')
+
+    
+#     try:
+#         a = input("Enter the equation 1 :")
+#         b = input("Enter the equation 2 :")
+#     except:
+#         print(
+#             "please enter the equation correctly"
+#         )
+#     else:
+#         a= a.strip().lower()
+#         b= b.strip().lower()
+#         x = []
+#         y = []
+#         for i in a:
+#             if type(i)== str(i):
+#                 x.append(i)
+#             else:
+#                 x.append(i)
+#         for i in b:
+#             if type(i)== str(i):
+#                 y.append(i)
+#             else:
+#                 y.append(i)
+#         print(x)
+#         print(y)
+        
+# solve()
+
+"""v"""
