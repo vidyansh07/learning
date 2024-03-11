@@ -1519,6 +1519,54 @@ removing alternate charecters from it
 #         print(x)
 #         print(y)
         
+# # solve()
+
+# """Vehicals and wheels questions"""
+# def solve():
+#     a = int(input("Enter the numbers of wheels : ") )
+#     b = int(input("Enter the  number of vehicles to want to produce : ") )
+    
+#     x = a//2
+#     y = a//4
+#     if x+y ==b:
+#         print(x,y)
 # solve()
 
-"""v"""
+"""matrix chain multiplication problemhv"""
+   
+
+import sys
+ 
+
+def MatrixChainOrder(p, i, j):
+    if i == j:
+        return 0
+ 
+    _min = sys.maxsize
+
+    for k in range(i, j):
+ 
+        count = (MatrixChainOrder(p, i, k)
+                 + MatrixChainOrder(p, k + 1, j)
+                 + p[i-1] * p[k] * p[j])
+ 
+        if count < _min:
+            _min = count
+ 
+    return _min
+ 
+ 
+
+if __name__ == '__main__':
+    arr = []
+    numberOfnums = int(input("Enter how many numbers you want to insert : "))
+   
+    for i in range(numberOfnums+1): 
+        nums= int(input("Enter the numbers :"))
+        arr.append(nums)
+        
+    
+    N = len(arr)
+     
+    print("Minimum number of multiplications is ",
+      MatrixChainOrder(arr, 1, N-1))
