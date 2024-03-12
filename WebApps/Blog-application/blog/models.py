@@ -33,7 +33,7 @@ class Post(models.Model):
     class Meta:
         ordering = ['-publish']
         indexes = [
-            models.Index(fields=['publ ish']),
+            models.Index(fields=['publish']),
         ]
     
     def __str__(self):
