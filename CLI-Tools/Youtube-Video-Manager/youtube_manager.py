@@ -44,7 +44,7 @@ def main():
         print("\n 5. exit the app")
         user_choice = input("Enter your choice :")
         print(videos)
-        
+            
         match user_choice:
             case "1":
                 list_all_videos(videos)
