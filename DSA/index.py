@@ -1612,85 +1612,135 @@ removing alternate charecters from it
 #     print(params)
 
 
-"""Dishiktrash algorithm"""
+# """Dishiktrash algorithm"""
    
-# Python program for Dijkstra's single
-# source shortest path algorithm. The program is
-# for adjacency matrix representation of the graph
-class Graph():
+# # Python program for Dijkstra's single
+# # source shortest path algorithm. The program is
+# # for adjacency matrix representation of the graph
+# class Graph():
  
-    def __init__(self, vertices):
-        self.V = vertices
-        self.graph = [[0 for column in range(vertices)]
-                      for row in range(vertices)]
+#     def __init__(self, vertices):
+#         self.V = vertices
+#         self.graph = [[0 for column in range(vertices)]
+#                       for row in range(vertices)]
  
-    def printSolution(self, dist):
-        print("Vertex \t Distance from Source")
-        for node in range(self.V):
-            print(node, "\t\t", dist[node])
+#     def printSolution(self, dist):
+#         print("Vertex \t Distance from Source")
+#         for node in range(self.V):
+#             print(node, "\t\t", dist[node])
  
-    # A utility function to find the vertex with
-    # minimum distance value, from the set of vertices
-    # not yet included in shortest path tree
-    def minDistance(self, dist, sptSet):
+#     # A utility function to find the vertex with
+#     # minimum distance value, from the set of vertices
+#     # not yet included in shortest path tree
+#     def minDistance(self, dist, sptSet):
  
-        # Initialize minimum distance for next node
-        min = 1e7
+#         # Initialize minimum distance for next node
+#         min = 1e7
  
-        # Search not nearest vertex not in the
-        # shortest path tree
-        for v in range(self.V):
-            if dist[v] < min and sptSet[v] == False:
-                min = dist[v]
-                min_index = v
+#         # Search not nearest vertex not in the
+#         # shortest path tree
+#         for v in range(self.V):
+#             if dist[v] < min and sptSet[v] == False:
+#                 min = dist[v]
+#                 min_index = v
  
-        return min_index
+#         return min_index
  
-    # Function that implements Dijkstra's single source
-    # shortest path algorithm for a graph represented
-    # using adjacency matrix representation
-    def dijkstra(self, src):
+#     # Function that implements Dijkstra's single source
+#     # shortest path algorithm for a graph represented
+#     # using adjacency matrix representation
+#     def dijkstra(self, src):
  
-        dist = [1e7] * self.V
-        dist[src] = 0
-        sptSet = [False] * self.V
+#         dist = [1e7] * self.V
+#         dist[src] = 0
+#         sptSet = [False] * self.V
  
-        for cout in range(self.V):
+#         for cout in range(self.V):
  
-            # Pick the minimum distance vertex from
-            # the set of vertices not yet processed.
-            # u is always equal to src in first iteration
-            u = self.minDistance(dist, sptSet)
+#             # Pick the minimum distance vertex from
+#             # the set of vertices not yet processed.
+#             # u is always equal to src in first iteration
+#             u = self.minDistance(dist, sptSet)
  
-            # Put the minimum distance vertex in the
-            # shortest path tree
-            sptSet[u] = True
+#             # Put the minimum distance vertex in the
+#             # shortest path tree
+#             sptSet[u] = True
  
-            # Update dist value of the adjacent vertices
-            # of the picked vertex only if the current
-            # distance is greater than new distance and
-            # the vertex in not in the shortest path tree
-            for v in range(self.V):
-                if (self.graph[u][v] > 0 and
-                   sptSet[v] == False and
-                   dist[v] > dist[u] + self.graph[u][v]):
-                    dist[v] = dist[u] + self.graph[u][v]
+#             # Update dist value of the adjacent vertices
+#             # of the picked vertex only if the current
+#             # distance is greater than new distance and
+#             # the vertex in not in the shortest path tree
+#             for v in range(self.V):
+#                 if (self.graph[u][v] > 0 and
+#                    sptSet[v] == False and
+#                    dist[v] > dist[u] + self.graph[u][v]):
+#                     dist[v] = dist[u] + self.graph[u][v]
  
-        self.printSolution(dist)
+#         self.printSolution(dist)
  
-# Driver program
-g = Graph(9)
-g.graph = [[0, 4, 0, 0, 0, 0, 0, 8, 0],
-           [4, 0, 8, 0, 0, 0, 0, 11, 0],
-           [0, 8, 0, 7, 0, 4, 0, 0, 2],
-           [0, 0, 7, 0, 9, 14, 0, 0, 0],
-           [0, 0, 0, 9, 0, 10, 0, 0, 0],
-           [0, 0, 4, 14, 10, 0, 2, 0, 0],
-           [0, 0, 0, 0, 0, 2, 0, 1, 6],
-           [8, 11, 0, 0, 0, 0, 1, 0, 7],
-           [0, 0, 2, 0, 0, 0, 6, 7, 0]
-           ]
+# # Driver program
+# g = Graph(9)
+# g.graph = [[0, 4, 0, 0, 0, 0, 0, 8, 0],
+#            [4, 0, 8, 0, 0, 0, 0, 11, 0],
+#            [0, 8, 0, 7, 0, 4, 0, 0, 2],
+#            [0, 0, 7, 0, 9, 14, 0, 0, 0],
+#            [0, 0, 0, 9, 0, 10, 0, 0, 0],
+#            [0, 0, 4, 14, 10, 0, 2, 0, 0],
+#            [0, 0, 0, 0, 0, 2, 0, 1, 6],
+#            [8, 11, 0, 0, 0, 0, 1, 0, 7],
+#            [0, 0, 2, 0, 0, 0, 6, 7, 0]
+#            ]
  
-g.dijkstra(0)
+# g.dijkstra(0)
  
-# This code is contributed by Divyanshu Mehta
+# # This code is contributed by Divyanshu Mehta
+
+
+
+def main():
+    t = int(input())
+
+    def sum_of_squares(nums):
+        if not nums:  # Base case: empty list
+            return 0
+        else:
+            if nums[0] > 0:
+                return nums[0] ** 2 + sum_of_squares(nums[1:])  # Recursive step
+            else:
+                return sum_of_squares(nums[1:])
+
+    def process_test_cases(count):
+        if count == 0:  # Base case: no more test cases
+            return
+        n = int(input())
+        nums = list(map(int, input().split()))
+        if nums:
+        # Calculate and print the sum of squares
+            print(sum_of_squares(nums))
+
+        process_test_cases(count - 1)  # Recursively process remaining test cases
+
+    process_test_cases(t)
+
+if __name__ == "__main__":
+    main()
+
+# Specific rules for Python solution
+# Your source code must be a single file, containing at least a main function
+# Do not use any for loop, while loop, or any list / set / dictionary comprehension
+# Your solution will be tested against Python 3.11 (as of February 2023) or higher
+# def main():
+#     ...
+
+
+# if __name__ == "__main__":
+#     main()
+# Sample Input
+# 2
+# 4
+# 3 -1 1 14
+# 5
+# 9 6 -53 32 16
+# Sample Output
+# 206
+# 1397
