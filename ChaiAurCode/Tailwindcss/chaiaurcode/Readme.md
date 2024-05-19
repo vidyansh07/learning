@@ -1,0 +1,2 @@
+## In the process of learning tailwind for django it's the most importent to follow the step 
+## And you should follow the write path and code location for In process of learning tailwind css with django.
