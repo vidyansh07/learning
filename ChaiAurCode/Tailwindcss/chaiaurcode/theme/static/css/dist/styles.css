@@ -827,11 +827,6 @@ select {
   line-height: 1;
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
 .leading-normal {
   line-height: 1.5;
 }
