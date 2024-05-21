@@ -1697,33 +1697,33 @@ removing alternate charecters from it
 
 
 
-def main():
-    t = int(input())
+# def main():
+#     t = int(input())
 
-    def sum_of_squares(nums):
-        if not nums:  # Base case: empty list
-            return 0
-        else:
-            if nums[0] > 0:
-                return nums[0] ** 2 + sum_of_squares(nums[1:])  # Recursive step
-            else:
-                return sum_of_squares(nums[1:])
+#     def sum_of_squares(nums):
+#         if not nums:  # Base case: empty list
+#             return 0
+#         else:
+#             if nums[0] > 0:
+#                 return nums[0] ** 2 + sum_of_squares(nums[1:])  # Recursive step
+#             else:
+#                 return sum_of_squares(nums[1:])
 
-    def process_test_cases(count):
-        if count == 0:  # Base case: no more test cases
-            return
-        n = int(input())
-        nums = list(map(int, input().split()))
-        if nums:
-        # Calculate and print the sum of squares
-            print(sum_of_squares(nums))
+#     def process_test_cases(count):
+#         if count == 0:  # Base case: no more test cases
+#             return
+#         n = int(input())
+#         nums = list(map(int, input().split()))
+#         if nums:
+#         # Calculate and print the sum of squares
+#             print(sum_of_squares(nums))
 
-        process_test_cases(count - 1)  # Recursively process remaining test cases
+#         process_test_cases(count - 1)  # Recursively process remaining test cases
 
-    process_test_cases(t)
+#     process_test_cases(t)
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
 
 # Specific rules for Python solution
 # Your source code must be a single file, containing at least a main function
@@ -1744,3 +1744,44 @@ if __name__ == "__main__":
 # Sample Output
 # 206
 # 1397
+
+
+
+def main():
+    print("The format of equation should be in this type : ax + by = c")
+    eu1 = input("Enter the equations :")
+    euu_one = ""
+    x = ""
+    a = []
+    eu2 = input("Enter the equations :")
+    euu_two = ""
+    b = []
+    y = ''
+    
+    
+
+    for i in eu1:
+        if i == " ":
+            euu_one = eu1.replace(" ", "")
+    print(euu_one)
+    for i in euu_one:
+        if i == i.isalpha():
+            x = i
+        elif i == i.isdigit():
+            a.append(i)
+            print(a)
+    for j in eu2:
+        if j == " ":
+            euu_two = eu2.replace(" ", "")
+        elif j == j.isdigit():
+            b.append(j)
+            print(b)
+    print(euu_two)
+    print(x)
+    print()
+    
+    
+    
+main()
+# for the algo of the linear equation problem solution
+
