@@ -235,13 +235,24 @@
 # disemvowel("Hello")
 
 
-def are_you_playing_banjo(name):
-    char = "R"
-    if char in name[0]:
-            print(f"{name} play banjo")
-    else:
-        print(f"{name}")
+# def are_you_playing_banjo(name):
+#     char = "R"
+#     if char in name[0]:
+#             print(f"{name} play banjo")
+#     else:
+#         print(f"{name}")
     
         
     
-are_you_playing_banjo("martin")
+# are_you_playing_banjo("martin")
+
+
+def game():
+    a = 0
+    while True:
+        if a == 9:
+            a =0
+        a = a+1
+        print(a-1, end="")
+        input()
+game()
