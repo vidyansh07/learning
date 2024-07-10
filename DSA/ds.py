@@ -234,5 +234,28 @@ Write a python program to implement stack in data structure
     AB         BA
     A           A
 """
-def design():
+
+
+
+
+
+
+
+"""
+    input 5,7,12,4,0,4,8,67,34,23,5,0,44,33,22,6,0
     
+    for given input
+    Q = create queue
+    S = create stack
+    what will be the output of queue
+    ans: 
+    """
+a= [5,7,12,4,0,4,8,67,34,23,5,0,44,33,22,6,0]
+def queue():
+    s= []
+    for i in a:
+        if i !=0:
+            s.append(i)
+        else:
+            
+     

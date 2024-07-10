@@ -1,13 +1,204 @@
-{% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>StudyBase</title>
+<script>
+function navbarShow() {
+    var navBar = document.getElementById("navbar");
+    navBar.style.width = "30%";
+    navBar.style.height = "70%";
+    navBar.style.backgroundColor = "ornaged";
+    navBar.style.color = "white";
+    navBar.style.transition = "3s";
+}
+
+
+</script>
+<!-- Google fonts added link -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@200&family=Open+Sans:wght@400;700&family=Poppins:wght@100;200;300;400;600;700&family=Roboto:wght@100&family=Style+Script&family=Ubuntu&display=swap" rel="stylesheet">
+
+<!-- Font awesome icon cdn -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.0/css/all.min.css">
+    <!-- Remix icon added link -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="
+    {% %}
+    ">
 </head>
 <body>
-    Hello I am vidyansh
+    <!-- Creating our Navbar  -->
+    <header>
+        <nav>
+            <h1><a href="#" class="logo">Logo</a></h1>
+           
+            <menu  id="navbar">
+              <span><i class="ri-menu-3-fill" id="icon"></i></span>
+                <ul id="ul">
+                  <i class="ri-close-line" style="color: white; font-size: 27px;" id="close"></i>
+<li class="gold"><a href="#">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#Services-section">Services</a></li>
+<li><a href="#">Contact</a></li>
+<li><a href="#">Blogs</a></li>
+                </ul>
+               
+            </menu>
+           
+        </nav>
+    </header>
+
+<main>
+   <h2 class="Main-content">Hello coders, Welcome to <span>StudyBase</span></h2>
+   <p class="para">Your are one of the best coding platform . Please Explore our courses to know more about us. <br /> Let's roll the intro of our web-App </p>
+   <div class="btn">
+    <a href="#">Explore-Now</a>
+   </div>
+</main>
+
+<!-- Adding our article section here -->
+<article id="about">
+<div id="aritcle-container">
+    <div class="right">
+<h3>Served Over</h3>
+<h1>13,999,99</h1>
+<h3>Children in 150 countries</h3>
+<a href="#">View our programs</a>
+    </div>
+    <div class="left">
+<h1>Who we Are ?</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nam distinctio consectetur quam , officiis molestias molestiae facere. Assumenda hic possimus rem consequuntur provident?</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit dolor, dolorum iure aliquam perferendis quae iste quidem placeat.</p>
+<a href="#">Learn More</a>
+    </div>
+</div>
+</article>
+<!-- My Services section starts from here -->
+<h2 id="tocken">Our services</h2>
+<div id="Services-section">
+ <!-- First section -->
+<div class="item-1">  
+  <div class="icon">
+    <i class="fa fa-folder-open"></i>
+  </div>
+
+  <div class="heading">
+    <h1>Web Application</h1>
+  </div>
+
+  <div class="paragraph">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At nisi dolore minima consequatur est ratione earum qui mollitia, maxime molestias dolor nulla, autem aliquid commodi. Fugit, fugiat!</p>
+  </div>
+  <div class="anchor">
+    <a href="#">Read More</a>
+  </div>
+
+</div>
+
+<!-- Second section -->
+<div class="item-1">
+    <div class="icon">
+        <i class="fa fa-database"></i>
+    </div>
+  
+    <div class="heading">
+      <h1>Highly customizable</h1>
+    </div>
+  
+    <div class="paragraph">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At nisi dolore minima consequatur est ratione earum qui mollitia, maxime molestias dolor nulla, autem aliquid commodi. Fugit, fugiat!</p>
+    </div>
+    <div class="anchor">
+      <a href="#">Read More</a>
+    </div>
+  </div>
+
+<!-- Third section -->
+<div class="item-1">
+    <div class="icon">
+        <i class="fa fa-building"></i>
+    </div>
+  
+    <div class="heading">
+      <h1>Responsive Design</h1>
+    </div>
+  
+    <div class="paragraph">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At nisi dolore minima consequatur est ratione earum qui mollitia, maxime molestias dolor nulla, autem aliquid commodi. Fugit, fugiat!</p>
+    </div>
+    <div class="anchor">
+      <a href="#">Read More</a>
+    </div>
+  
+  </div>
+
+  <!-- Abi maza aayega n bido -->
+  <div class="item-1">  
+  <div class="icon">
+    <!-- <i class="fa fa-folder-open"></i> -->
+    <i class="fa fa-cogs"></i>
+  </div>
+
+  <div class="heading">
+    <h1>Services & Plugins</h1>
+  </div>
+
+  <div class="paragraph">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At nisi dolore minima consequatur est ratione earum qui mollitia, maxime molestias dolor nulla, autem aliquid commodi. Fugit, fugiat!</p>
+  </div>
+  <div class="anchor">
+    <a href="#">Read More</a>
+  </div>
+
+</div>
+
+<!-- Second section -->
+<div class="item-1">
+    <div class="icon">
+        <!-- <i class="fa fa-database"></i> -->
+        <i class="fa fa-compass"></i>
+    </div>
+  
+    <div class="heading">
+      <h1>Optimize your speed</h1>
+    </div>
+  
+    <div class="paragraph">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At nisi dolore minima consequatur est ratione earum qui mollitia, maxime molestias dolor nulla, autem aliquid commodi. Fugit, fugiat!</p>
+    </div>
+    <div class="anchor">
+      <a href="#">Read More</a>
+    </div>
+  </div>
+
+<!-- Third section -->
+<div class="item-1">
+    <div class="icon">
+        <!-- <i class="fa fa-building"></i> -->
+        <i class="fa fa-heartbeat"></i>
+    </div>
+  
+    <div class="heading">
+      <h1>Dedicate support </h1>
+    </div>
+  
+    <div class="paragraph">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At nisi dolore minima consequatur est ratione earum qui mollitia, maxime molestias dolor nulla, autem aliquid commodi. Fugit, fugiat!</p>
+    </div>
+    <div class="anchor">
+      <a href="#">Read More</a>
+    </div>
+  
+  </div>
+</div>
+    <!-- Adding our js file At the end of the body tag because it will help us alot -->
+    <script src="./main.js"></script>
 </body>
 </html>

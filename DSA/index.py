@@ -1747,44 +1747,62 @@ removing alternate charecters from it
 
 
 
-def main():
-    print("The format of equation should be in this type : ax + by = c")
-    eu1 = input("Enter the equations :")
-    euu_one = ""
-    x = ""
-    a = []
-    eu2 = input("Enter the equations :")
-    euu_two = ""
-    b = []
-    y = ''
+# def main():
+#     print("The format of equation should be in this type : ax + by = c")
+#     eu1 = input("Enter the equations :")
+#     euu_one = ""
+#     x = ""
+#     a = []
+#     eu2 = input("Enter the equations :")
+#     euu_two = ""
+#     b = []
+#     y = ''
     
     
 
-    for i in eu1:
-        if i == " ":
-            euu_one = eu1.replace(" ", "")
-    print(euu_one)
-    for i in euu_one:
-        if i == i.isalpha():
-            x = i
-        elif i == i.isdigit():
-            a.append(i)
-            print(a)
-    for j in eu2:
-        if j == " ":
-            euu_two = eu2.replace(" ", "")
-        elif j == j.isdigit():
-            b.append(j)
-            print(b)
-    print(euu_two)
-    print(x)
-    print()
+#     for i in eu1:
+#         if i == " ":
+#             euu_one = eu1.replace(" ", "")
+#     print(euu_one)
+#     for i in euu_one:
+#         if i == i.isalpha():
+#             x = i
+#         elif i == i.isdigit():
+#             a.append(i)
+#             print(a)
+#     for j in eu2:
+#         if j == " ":
+#             euu_two = eu2.replace(" ", "")
+#         elif j == j.isdigit():
+#             b.append(j)
+#             print(b)
+#     print(euu_two)
+#     print(x)
+#     print()
     
     
     
     
     
     
-main()
-# for the algo of the linear equation problem solution
+# main()
+
+
+# def main():
+#     a = input("Enter the sentence")
+#     b = a.split(" ")
+#     c = []
+#     for i in b:
+#         for j in range(len(b)):
+#             if i != b[j]:
+#                 c.append(i)
+#             else :
+#                 print('no words are common')
+#     if len(c)==0:
+#         pass
+#     else:
+#         print(c)
+# main()
+
+
 
