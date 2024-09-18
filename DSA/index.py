@@ -1805,4 +1805,10 @@ removing alternate charecters from it
 # main()
 
 
-
+def main():
+    arr = [20, 45, 27, 35, 55 , 67, 75, 88, 199]
+    a =0
+    for i in arr:
+        if i == 20:
+            a = arr.index(20)
+    return a
