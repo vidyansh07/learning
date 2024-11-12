@@ -71,7 +71,7 @@ Basic Python projects and scripts covering essential programming concepts and fo
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/your-username/python-learning-projects.git
+    git clone https://github.com/vidyansh07/python-learning-projects.git
     cd python-learning-projects
     ```
 
@@ -132,8 +132,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For questions or feedback, please reach out via email:
 
-- **Email**: [your-email@example.com](mailto:your-email@example.com)
-- **GitHub**: [https://github.com/your-username](https://github.com/your-username)
+- **Email**: [your-email@example.com](mailto:vidyansht@example.com)
+- **GitHub**: [https://github.com/your-username](https://github.com/vidyansh07)
 
 ---
 
