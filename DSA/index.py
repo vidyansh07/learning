@@ -1805,10 +1805,49 @@ removing alternate charecters from it
 # main()
 
 
-def main():
-    arr = [20, 45, 27, 35, 55 , 67, 75, 88, 199]
-    a =0
-    for i in arr:
-        if i == 20:
-            a = arr.index(20)
-    return a
+"""Linear Search algorithem"""
+
+# def main():
+#     arr = [20, 45, 27, 35, 55 , 67, 75, 88, 199]
+#     a =0
+#     for i in arr:
+#         if i == 20:
+#             a = arr.index(20)
+#     return a
+
+# print(main())
+
+
+
+# """Binary Search Algorithem and code in python"""
+
+# def Bn(arr, i, j, x):
+#     mid = i + (j-1)//2
+#     if arr[mid]== x:
+#         return mid
+#     elif arr[mid]<x:
+#         return Bn(arr, mid+1, j, x)
+#     else:
+#         return Bn(arr, i, mid-1, x)
+
+# arr = [10, 12, 14, 16, 18, 20]
+# i =0
+# j= len(arr)-1
+# print(Bn(arr, i, j, 20))
+
+# # for i in range(1, 2):
+# #     print(10)
+
+def removedup(arr):
+    b = []
+    a = 0
+    for i in range(len(arr)-1):
+        if arr[i]!= a:
+            a = arr[i]
+            if a not in b:
+                b.append(a)
+        
+    return b
+
+arr = [4,4,5]
+print(removedup(arr))
